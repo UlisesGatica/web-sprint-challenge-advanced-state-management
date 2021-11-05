@@ -20,12 +20,9 @@ const AddForm = (props) => {
 
     const handleSubmit = e => {
         e.preventDefault();
-        if (state.name === "" || state.position === "" || state.nickname === "") {
-            //add in error action
-            addError('FILL OUT ALL BOXES!!!')
-        }else{
-            postSmurf(state)
-        }
+        //add in error action
+        postSmurf(state)
+        addError()
     }
 
     return(<section>
